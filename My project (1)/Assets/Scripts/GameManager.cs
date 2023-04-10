@@ -22,14 +22,19 @@ public class GameManager : MonoBehaviour
     }
 
     private void Start()
-    {
-        LoadScene("MenuPrincipal");
-    }
+        {
+            LoadScene("MenuPrincipal");
+        }
 
     public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
         }
-
+    private void update()
+        {
+            if (Input.GetKeyDown("Jump"))
+            {
+            }
+        }
     }
 
